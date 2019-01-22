@@ -58,7 +58,11 @@ prompt_git() {
 
 		[ -n "${s}" ] && s=" [${s}]";
 
-		echo -e "${1}${branchName}${2}${s}";
+		#  THis is what it was before.
+		# echo -e "${1}${branchName}${2}${s}";
+
+		# TODO: Fix the coloring of the branch name not being inherited from the git status
+		echo -e "${1}${2}${s} ${branchName}";
 	else
 		return;
 	fi;
@@ -117,11 +121,11 @@ function random_element {
 # Set the terminal title and prompt.
 PS1="\[\033]0;\W\007\]"; # working directory base name
 PS1+="\[${bold}\]\n"; # newline
-# PS1+="\[${userStyle}\]\u"; # username
 PS1+="$(random_element 😅 👽 🔥 🚀 👻 ⛄ 👾 🍔 😄 🍰 🐑 😎 🏎 🤖 😇 😼 💪 🦄 🥓 🌮 🎉 💯 ⚛️ 🐠 🐳 🐿 🥳 🤩 🤯 🤠 👨‍💻 🦸‍ 🧝‍ 🧞‍ 🧙‍ 👨‍🚀 👨‍🔬 🕺 🦁 🐶 🐵 🐻 🦊 🐙 🦎 🦖 🦕 🦍 🦈 🐊 🦂 🐍 🐢 🐘 🐉 🦚 ✨ ☄️ ⚡️ 💥 💫 🧬 🔮 ⚗️ 🎊 🔭 ⚪️ 🔱)"
+PS1+="\$(prompt_git \"\[${white}\] \[${violet}\]\" \"\[${blue}\]\")"; # Git repository details
+# PS1+="\[${userStyle}\]\u"; # username
 PS1+="\[${white}\] in ";
 PS1+="\[${green}\]\w"; # working directory full path
-PS1+="\$(prompt_git \"\[${white}\] on \[${violet}\]\" \"\[${blue}\]\")"; # Git repository details
 PS1+="\n";
 PS1+="\[${white}\]\$ \[${reset}\]"; # `$` (and reset color)
 
