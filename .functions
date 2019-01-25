@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# Create a new directory and enter it
+function mkd() {
+	mkdir -p "$@" && cd "$_";
+}
+
+# Git commit stashed changes and type a message
+function gm { git commit -m "$@"; }

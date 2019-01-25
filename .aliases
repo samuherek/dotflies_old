@@ -1,0 +1,7 @@
+# Aliases
+alias ll="ls -1a";
+alias ..="cd ../";
+alias wd="cd ~/Documents/Websites";
+alias sb="source ~/.bash_profile";
+alias showFiles='defaults write com.apple.finder AppleShowFiles YES; killall Finder'
+alias hideFiles='defaults write com.apple.finder AppleShowFiles NO; killall Finder'

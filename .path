@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# PATH ALTERATIONS
+## Node
+PATH="/usr/local/bin:$PATH:./node_modules/.bin";
+
+#  Old stuff I had before which I should review.
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
+
+export PATH="~/.composer/vendor/bin:$PATH"
+export PATH="/usr/local/php5/bin:$PATH"
+
+# Setting PATH for Python 3.6
+# The original version is saved in .bash_profile.pysave
+export PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+
+# SMLNJ for ML language
+export PATH="$PATH:/usr/local/smlnj/bin"

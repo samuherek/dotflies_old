@@ -8,3 +8,6 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
 done;
 unset file;
 
+# history size
+HISTSIZE=5000
+HISTFILESIZE=10000
