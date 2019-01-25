@@ -1,7 +1,11 @@
 # Aliases
-alias ll="ls -1a";
-alias ..="cd ../";
-alias wd="cd ~/Documents/Websites";
-alias sb="source ~/.bash_profile";
-alias showFiles='defaults write com.apple.finder AppleShowFiles YES; killall Finder'
-alias hideFiles='defaults write com.apple.finder AppleShowFiles NO; killall Finder'
+alias ll="ls -1a"; # List all files in a vertical list
+alias ..="cd ../"; # Move dirrectory up
+alias ...="cd ../../"; # Move two dirrectories up
+alias wd="cd ~/Documents/Websites"; # Go to my base folder for code
+alias sb="source ~/.bash_profile"; # Source bash_profile
+alias showFiles='defaults write com.apple.finder AppleShowFiles YES; killall Finder' # Show hidden files in finder
+alias hideFiles='defaults write com.apple.finder AppleShowFiles NO; killall Finder' #Hide hidden files in finder
+
+#Github
+alias gm="git push origin master"

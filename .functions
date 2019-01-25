@@ -6,4 +6,4 @@ function mkd() {
 }
 
 # Git commit stashed changes and type a message
-function gm { git commit -m "$@"; }
+function gc { git commit -m "$@"; }
