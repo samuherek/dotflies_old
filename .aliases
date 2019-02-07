@@ -7,5 +7,6 @@ alias sb="source ~/.bash_profile"; # Source bash_profile
 alias showFiles='defaults write com.apple.finder AppleShowFiles YES; killall Finder' # Show hidden files in finder
 alias hideFiles='defaults write com.apple.finder AppleShowFiles NO; killall Finder' #Hide hidden files in finder
 
-#Github
+#Git
 alias gm="git push origin master"
+alias gp="git pull origin master"
