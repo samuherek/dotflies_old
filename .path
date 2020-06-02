@@ -16,3 +16,9 @@ export PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 
 # SMLNJ for ML language
 export PATH="$PATH:/usr/local/smlnj/bin"
+
+# Samrai EvoDt
+export PATH="$PATH:/Users/samuherek/Documents/Websites/samarai/evolution/src/xplat/app/evodt/bin"
+
+# Rust Cargo
+export PATH="$HOME/.cargo/bin:$PATH"

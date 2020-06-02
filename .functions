@@ -7,3 +7,6 @@ function mkd() {
 
 # Git commit stashed changes and type a message
 function gc { git commit -m "$@"; }
+
+# Git push changes to origin branch
+function gpo { git push origin "$@"; }

@@ -8,5 +8,9 @@ alias showFiles='defaults write com.apple.finder AppleShowFiles YES; killall Fin
 alias hideFiles='defaults write com.apple.finder AppleShowFiles NO; killall Finder' #Hide hidden files in finder
 
 #Git
-alias gm="git push origin master"
-alias gp="git pull origin master"
+alias g="git status"
+alias ga="git add"
+alias gc="git commit"
+alias gcm="gc -m"
+alias gp="git push"
+alias gpom="git push origin master"
